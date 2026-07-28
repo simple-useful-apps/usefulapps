@@ -64,7 +64,7 @@ li span { color: var(--muted); }
 
 .meta { float: right; color: var(--muted); font-variant-numeric: tabular-nums; }
 
-.apps a { color: var(--fg); font-weight: 600; }
+.apps a { font-weight: 600; }
 
 .note { margin: 1.6rem 0; padding: 1rem 1.1rem; border-left: 3px solid var(--brand); background: var(--soft); }
 
