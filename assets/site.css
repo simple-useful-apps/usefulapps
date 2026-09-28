@@ -59,8 +59,6 @@ li span { color: var(--muted); }
 
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
 
-footer p { margin-bottom: 0.35rem; }
-
 a { color: var(--accent); text-decoration: none; }
 
 a:hover { text-decoration: underline; }

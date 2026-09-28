@@ -20,8 +20,7 @@ Each app repo's `docs/` folder is the source of truth — never edit the copies 
 When an app's docs change, re-sync and commit:
 
 ```sh
-./sync.sh           # copy every app's HTML + assets, then show what changed
-./sync.sh --check   # fail if any copy is out of date (run before pushing)
+./sync.sh   # copy every app's HTML + assets, then show what changed
 ```
 
 The script mirrors deletions too, and publishes PNG icons at 192px (2× the
