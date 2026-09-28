@@ -14,12 +14,17 @@
   <p class="tagline">Help with Voice Takes.</p>
 
   <h2>Recording does not start</h2>
-  <p>Open Settings on your iPhone and confirm that Voice Takes has permission to use the microphone and speech recognition. The first transcription may also require Apple to download a language asset.</p>
+  <p>Open Settings on your iPhone and confirm that Voice Takes has permission to use the microphone. Speech-recognition permission enables the optional words-as-you-speak preview, but durable recording and final file transcription do not depend on that preview. The first high-accuracy transcription may need to download a Whisper model; the Apple fallback may also need a language asset.</p>
+
+  <hr>
+
+  <h2>A transcript is marked provisional</h2>
+  <p>This means the complete-file transcription did not finish and Voice Takes saved its live preview instead of pretending it was final. The protected recovery audio is still on the phone. Retry transcription from the take, accept the preview, or delete the take to remove that audio.</p>
 
   <hr>
 
   <h2>Cleanup is unavailable</h2>
-  <p>Light and Formatted cleanup depend on the on-device language model being available and enabled. Your verbatim transcript remains available when cleanup cannot run.</p>
+  <p>Cleaned Up transcripts depend on the on-device language model being available and enabled. Your Verbatim transcript remains available when cleanup cannot run.</p>
 
   <hr>
 

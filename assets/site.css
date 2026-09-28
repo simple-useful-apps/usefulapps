@@ -3,10 +3,8 @@
   --bg: #fbfbf9;
   --fg: #1c1c1e;
   --muted: #6e6e73;
-  --accent: #007aff;
-  --brand: #0a84ff;
+  --accent: #0068d7;
   --rule: rgba(0, 0, 0, 0.12);
-  --soft: rgba(0, 122, 255, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +14,6 @@
     --muted: #98989f;
     --accent: #0a84ff;
     --rule: rgba(255, 255, 255, 0.14);
-    --soft: rgba(10, 132, 255, 0.1);
   }
 }
 
@@ -31,13 +28,9 @@ body {
 
 main { max-width: 34rem; margin: 0 auto; padding: 5rem 1.5rem 4rem; }
 
-.icon { width: 96px; height: 96px; display: block; margin-bottom: 1.75rem; border-radius: 22px; }
-
 h1 { margin-bottom: 0.4rem; font-size: 1.6rem; font-weight: 650; letter-spacing: -0.01em; }
 
 .tagline { margin-bottom: 2.25rem; color: var(--muted); font-size: 1.25rem; }
-
-.updated { margin-bottom: 2rem; color: var(--muted); }
 
 p { margin-bottom: 1.1rem; }
 
@@ -62,11 +55,7 @@ li:last-child { border-bottom: 0; }
 
 li span { color: var(--muted); }
 
-.meta { float: right; color: var(--muted); font-variant-numeric: tabular-nums; }
-
 .apps a { font-weight: 600; }
-
-.note { margin: 1.6rem 0; padding: 1rem 1.1rem; border-left: 3px solid var(--brand); background: var(--soft); }
 
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
 
@@ -76,9 +65,8 @@ a { color: var(--accent); text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
-a:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; border-radius: 2px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 
 @media (max-width: 28rem) {
   main { padding-top: 3.5rem; }
-  .meta { float: none; display: block; }
 }

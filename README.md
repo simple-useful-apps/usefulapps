@@ -1,4 +1,4 @@
-# Matt's Useful Apps — mattsusefulapps.org
+# Matt's Useful Apps — simple-useful-apps.org
 
 The hub site for the "Matt's Useful Apps" series: a single static page introducing
 the apps and the philosophy, plus a copy of each app's documentation site.
@@ -10,28 +10,36 @@ No build step, no JavaScript. Plain HTML and one stylesheet.
 - `index.html` + `assets/site.css` — the hub page and house stylesheet
 - `theoldpod/`, `takes/`, `chatfolio/` — copies of each app repo's `docs/` site
   (HTML + assets only)
+- `sync.sh` — refreshes the app copies from their repos
 - `CNAME` — custom domain for GitHub Pages
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
 ## Maintenance
 
-Each app repo's `docs/` folder is the source of truth. When an app's docs change,
-re-copy its site files here:
+Each app repo's `docs/` folder is the source of truth — never edit the copies here.
+When an app's docs change, re-sync and commit:
 
 ```sh
-cp ~/Projects/<app>/docs/*.html <app>/
-cp -R ~/Projects/<app>/docs/assets/ <app>/assets/
+./sync.sh           # copy every app's HTML + assets, then show what changed
+./sync.sh --check   # fail if any copy is out of date (run before pushing)
 ```
+
+The script mirrors deletions too, and publishes PNG icons at 192px (2× the
+96px they're shown at) rather than the 1024px masters. It expects the app repos
+in `~/Projects`; set `PROJECTS=/some/dir` to override.
 
 ## One-time deploy steps
 
 1. Create a GitHub repo (e.g. `mattreed555/usefulapps`) and push this folder to `main`.
 2. In the repo settings, enable **Pages** → deploy from branch → `main`, root (`/`).
-3. Register `mattsusefulapps.org` and point DNS at GitHub Pages:
+3. Point DNS at GitHub Pages:
    - Apex `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - Optional `www` `CNAME` record → `mattreed555.github.io`
-4. In the repo's Pages settings, set the custom domain to `mattsusefulapps.org`
+4. In the repo's Pages settings, set the custom domain to `simple-useful-apps.org`
    and enable **Enforce HTTPS** once the certificate is issued.
+5. Verify the domain under your GitHub account's **Settings → Pages → Verified
+   domains** (a `TXT` record). This stops anyone else from claiming the domain
+   on GitHub Pages if this repo is ever renamed or deleted.
 
 ## Local preview
 

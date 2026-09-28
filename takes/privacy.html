@@ -11,13 +11,13 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Voice Takes · last updated July 2026</p>
+  <p class="updated">Voice Takes · last updated August 2026</p>
 
-  <p><strong>Voice Takes has no account, advertising, analytics, third-party SDKs, or app-owned server.</strong> The developer does not receive your recordings, transcripts, notes, personal dictionary, or information about how you use the app.</p>
+  <p><strong>Voice Takes has no account, advertising, analytics, or developer-operated server.</strong> The developer does not receive your recordings, transcripts, notes, personal dictionary, or information about how you use the app.</p>
 
-  <p>Speech transcription, cleanup, and title generation are performed on your iPhone using Apple system frameworks when those features are available. Apple may download system-managed speech or language-model assets to the device. Voice Takes does not upload your voice or transcript to a developer-operated service.</p>
+  <p>Speech transcription is performed on your iPhone using the open-source WhisperKit software and Apple system speech frameworks. Cleanup and title generation use Apple system frameworks when available. WhisperKit downloads speech-model weights, and Apple may download system-managed speech or language-model assets. These model downloads do not include your recordings, transcripts, notes, or personal dictionary. Voice Takes does not upload that content to a developer-operated service.</p>
 
-  <p>While you record, Voice Takes writes audio to a protected temporary recovery file so an interrupted take can be finalized safely. The file is deleted after the raw transcript and note metadata are stored. If finalization fails, it is retained only until recovery is completed or abandoned. Saved notes do not contain audio.</p>
+  <p>While you record, Voice Takes writes audio to a protected temporary recovery file so an interrupted take can be finalized safely. The file is deleted after a complete raw transcript and note metadata are stored. If finalization fails, a live transcript may be marked provisional and the audio is retained until transcription succeeds or you accept or delete that provisional take. Saved notes do not contain an audio-file reference.</p>
 
   <p>Your saved transcripts, generated titles, cleanup variants, settings, and personal dictionary remain in the app's local storage until you delete them or remove the app.</p>
 
