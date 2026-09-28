@@ -1,6 +1,6 @@
-# Matt's Useful Apps — simple-useful-apps.org
+# Simple Useful Apps — simple-useful-apps.org
 
-The hub site for the "Matt's Useful Apps" series: a single static page introducing
+The hub site for the Simple Useful Apps series: a single static page introducing
 the apps and the philosophy, plus a copy of each app's documentation site.
 
 No build step, no JavaScript. Plain HTML and one stylesheet.
