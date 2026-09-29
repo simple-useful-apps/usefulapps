@@ -4,7 +4,6 @@
   --fg: #1c1c1e;
   --muted: #6e6e73;
   --accent: #0068d7;
-  --focus: #0a84ff;
   --rule: rgba(0, 0, 0, 0.12);
 }
 
@@ -14,7 +13,6 @@
     --fg: #f2f2ef;
     --muted: #a1a1a8;
     --accent: #64a8ff;
-    --focus: #64a8ff;
     --rule: rgba(255, 255, 255, 0.14);
   }
 }
@@ -130,7 +128,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 3px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
