@@ -18,6 +18,9 @@ font (Instrument Sans, SIL Open Font License).
 
 ## Maintenance
 
+When you change `assets/site.css`, bump the `?v=` number on its link in
+`index.html` so browsers fetch the new copy instead of a cached one.
+
 Each app repo's `docs/` folder is the source of truth — never edit the copies here.
 When an app's docs change, re-sync and commit:
 

@@ -65,7 +65,7 @@ li span { color: var(--muted); }
 
 .apps li { display: grid; grid-template-columns: 2.75rem 1fr; column-gap: 0.9rem; align-items: center; }
 
-.apps img { grid-row: span 2; width: 2.75rem; height: 2.75rem; border-radius: 0.6rem; }
+.apps img { grid-row: span 2; width: 2.75rem; height: 2.75rem; border-radius: 22.5%; }
 
 .apps a { font-weight: 600; }
 
