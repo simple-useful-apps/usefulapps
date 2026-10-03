@@ -11,7 +11,7 @@ apps="theoldpod takes chatfolio"
 for app in $apps; do
   rsync -a --delete --exclude='.DS_Store' --include='*.html' --include='assets/***' --exclude='*' \
     "$projects/$app/docs/" "$app/"
-  # Pages show the icon at 96px; publish a 2x copy instead of the 1024px master.
+  # Pages show the icon at up to 80px; publish a 2x-plus copy instead of the 1024px master.
   for png in "$app"/assets/*.png; do
     if [ -e "$png" ]; then sips --resampleHeightWidthMax 192 "$png" >/dev/null; fi
   done

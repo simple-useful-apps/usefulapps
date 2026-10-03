@@ -1,3 +1,11 @@
+/* Instrument Sans, SIL Open Font License (see InstrumentSans-OFL.txt). */
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("InstrumentSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light dark;
   --bg: #fbfbf9;
@@ -22,7 +30,7 @@
 body {
   background: var(--bg);
   color: var(--fg);
-  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font: 17px/1.6 "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -55,7 +63,13 @@ li:last-child { border-bottom: 0; }
 
 li span { color: var(--muted); }
 
+.apps li { display: grid; grid-template-columns: 2.75rem 1fr; column-gap: 0.9rem; align-items: center; }
+
+.apps img { grid-row: span 2; width: 2.75rem; height: 2.75rem; border-radius: 0.6rem; }
+
 .apps a { font-weight: 600; }
+
+.apps span { line-height: 1.35; }
 
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
 

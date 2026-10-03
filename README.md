@@ -3,7 +3,8 @@
 The hub site for the Simple Useful Apps series: a single static page introducing
 the apps and the philosophy, plus a copy of each app's documentation site.
 
-No build step, no JavaScript. Plain HTML and one stylesheet.
+No build step, no JavaScript. Plain HTML, one stylesheet, and one self-hosted
+font (Instrument Sans, SIL Open Font License).
 
 ## Layout
 
@@ -11,6 +12,7 @@ No build step, no JavaScript. Plain HTML and one stylesheet.
 - `theoldpod/`, `takes/`, `chatfolio/` — copies of each app repo's `docs/` site
   (HTML + assets only)
 - `sync.sh` — refreshes the app copies from their repos
+- `CONTRIBUTING.md` — how to report bugs and send changes (linked from the hub)
 - `CNAME` — custom domain for GitHub Pages
 - `.nojekyll` — tells GitHub Pages to serve files as-is
 
@@ -23,8 +25,8 @@ When an app's docs change, re-sync and commit:
 ./sync.sh   # copy every app's HTML + assets, then show what changed
 ```
 
-The script mirrors deletions too, and publishes PNG icons at 192px (2× the
-96px they're shown at) rather than the 1024px masters. It expects the app repos
+The script mirrors deletions too, and publishes PNG icons at 192px (more than 2× the
+80px they're shown at) rather than the 1024px masters. It expects the app repos
 in `~/Projects`; set `PROJECTS=/some/dir` to override.
 
 ## One-time deploy steps
