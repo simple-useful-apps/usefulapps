@@ -28,6 +28,20 @@ When an app's docs change, re-sync and commit:
 ./sync.sh   # copy every app's HTML + assets, then show what changed
 ```
 
+### Coming-soon apps
+
+`sync.sh` has two lists: `apps` (live) and `soon` (coming soon). A coming-soon app
+gets only its icon copied, so no page of its own is published, and its hub row in
+`index.html` is dimmed with no link:
+
+```html
+<li class="soon"><img src="takes/assets/icon.png" width="44" height="44" alt=""> <strong>Voice Takes</strong> <span><strong>Coming Soon!</strong> A camera for your voice.</span></li>
+```
+
+To launch one, move it from `soon` to `apps` in `sync.sh`, run `./sync.sh`, and
+change its row back to a normal one: drop `class="soon"` and the `Coming Soon!`,
+and turn the name into a link (`<a href="takes/">Voice Takes</a>`).
+
 The script mirrors deletions too, and publishes PNG icons at 192px (more than 2× the
 80px they're shown at) rather than the 1024px masters. It expects the app repos
 in `~/Projects`; set `PROJECTS=/some/dir` to override.
