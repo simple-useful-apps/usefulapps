@@ -48,11 +48,11 @@ in `~/Projects`; set `PROJECTS=/some/dir` to override.
 
 ## One-time deploy steps
 
-1. Create a GitHub repo (e.g. `mattreed555/usefulapps`) and push this folder to `main`.
+1. Create a GitHub repo (e.g. `simple-useful-apps/usefulapps`) and push this folder to `main`.
 2. In the repo settings, enable **Pages** → deploy from branch → `main`, root (`/`).
 3. Point DNS at GitHub Pages:
    - Apex `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - Optional `www` `CNAME` record → `mattreed555.github.io`
+   - Optional `www` `CNAME` record → `simple-useful-apps.github.io`
 4. In the repo's Pages settings, set the custom domain to `simple-useful-apps.org`
    and enable **Enforce HTTPS** once the certificate is issued.
 5. Verify the domain under your GitHub account's **Settings → Pages → Verified
