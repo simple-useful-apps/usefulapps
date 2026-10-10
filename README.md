@@ -3,18 +3,7 @@
 The hub site for the Simple Useful Apps series: a single static page introducing
 the apps and the philosophy, plus a copy of each app's documentation site.
 
-No build step, no JavaScript. Plain HTML, one stylesheet, and one self-hosted
-font (Instrument Sans, SIL Open Font License).
-
-## Layout
-
-- `index.html` + `assets/site.css` — the hub page and house stylesheet
-- `theoldpod/`, `takes/`, `chatfolio/` — copies of each app repo's `docs/` site
-  (HTML + assets only)
-- `sync.sh` — refreshes the app copies from their repos
-- `CONTRIBUTING.md` — how to report bugs and send changes (linked from the hub)
-- `CNAME` — custom domain for GitHub Pages
-- `.nojekyll` — tells GitHub Pages to serve files as-is
+Plain HTML, one stylesheet, and one self-hosted font (Instrument Sans, SIL Open Font License).
 
 ## Maintenance
 
